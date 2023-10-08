@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply text-white font-Poppins;
+}
+
+.active {
+  @apply underline;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.select-arrow::after {
+  @apply content-[""] absolute right-6 rotate-45 border-b border-r h-4 w-4 bottom-1/2;
+}
+
+.slick-track {
+  @apply flex items-center;
+}
